@@ -54,8 +54,15 @@ this.a = 9.5
 console.log(a)
 console.log(this.a)
 console.log(global.a)
+console.log(module.exports.a)
 
+// não criar variavel global desde mode, sem let, var ou const
 a = "lucas"
 global.a = " é uma "
 this.a = " cachorra"
 console.log(a, global.a, this.a)
+
+console.log(module.exports.a)
+// node = module.exports === this
+console.log(module.exports === this)
+console.log(module.exports)
