@@ -4,4 +4,6 @@
 function f1() {console.log(this)}
 f1()
 
-//quando se criar um função com o function em JS o this pode variar
+//quando se cria um função com o function em JS o this pode variar
+
+// funcões criadas com arrow function o this nunca vai variar
