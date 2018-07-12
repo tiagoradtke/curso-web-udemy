@@ -13,8 +13,6 @@ const sequencia = {
     }   
 }
 
-console.log(sequencia.valor, sequencia.valor)
-sequencia.valor = 1000
-console.log(sequencia.valor, sequencia.valor)
-sequencia.valor = 900
-console.log(sequencia.valor, sequencia.valor)
+
+
+console.log(soma = 76*9+209*4+199*4,"+", fibras = 28*4,"=",soma+fibras)
