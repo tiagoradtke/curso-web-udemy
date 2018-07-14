@@ -1,0 +1,26 @@
+>Definição do modelo de DevOps
+https://aws.amazon.com/pt/devops/what-is-devops/
+
+> Leonardo apresenta um breve histórico
+
+> Comenta sobre o protocolo TCP/IP
+    Comenta que o TCP/IP segue o pradrão de projetos Layers
+
+> Anatomia do IPv4
+
+    Class	Theoretical     Address Range	        Used for
+    A	    0.0.0.0      to 127.255.255.255  	Very large networks
+    B	    128.0.0.0    to 191.255.255.255	    Medium networks
+    C	    192.0.0.0    to 223.255.255.255	    Small networks
+    D	    224.0.0.0    to 239.255.255.255	    Multicast
+
+> Conceito de Porta
+    Em Redes de Computadores, uma porta é um software de 
+    aplicação específica ou processo específico servindo 
+    de ponto final de comunicações em um sistema operacional 
+    hospedeiro de um computador. Uma porta tem associação com
+    o endereço de IP do hospedeiro, assim como o tipo de protocolo 
+    usado para comunicação. O propósito das portas é para singularmente
+    identificar aplicações e processos de um único computador e assim
+    possibilitá-los a compartilhar uma única conexão física com uma 
+    rede de comutação de pacotes, como a internet.

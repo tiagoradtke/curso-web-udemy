@@ -1,0 +1,30 @@
+- HTTPS 
+    (Hyper Text Transfer Protocol Secure - 
+    protocolo de transferência de hipertexto seguro)
+
+    - Características
+        - Dados criptografados usando os protocolos TLS ou SLL
+        - Protege contra interceptação (MITM - O man-in-the-middle (pt: Homem no meio, em referência ao atacante que intercepta os dados) é uma forma de ataque em que os dados trocados entre duas .. )
+        - Criptografa todas as informações: URL, cookies  e headers
+        - Usa Certificados Digitais
+
+    - Autoridaddes Certificadores
+        - Instituição responsável pela certificação
+            - https://letsencrypt.org/
+
+    - http + tls
+        - Transport Layer Security (TLS), assim como o seu antecessor
+        Secure Sockets Layer (SSL), é um protocolo de segurança 
+        que protege as telecomunicações via internet para serviços 
+        como e-mail (SMTP), navegação por páginas (HTTPS) e outros 
+        tipos de transferência de dados.
+
+    - http + ssl
+        - SSL é a abreviação de Secure Sockets Layer, ou seja, 
+        uma ferramenta de encriptação de páginas antes de serem transmitidas
+        pela internet que autentifica as partes envolvidas. 
+        É muito utilizada para pagamentos online com cartão de crédito
+
+    - Certificado <> Protocolo
+        - SSL/ TLS são protocolosos
+        "Certificados usados com SSL/TLS"

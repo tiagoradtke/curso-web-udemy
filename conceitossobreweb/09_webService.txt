@@ -1,0 +1,68 @@
+- Web Service
+    - Web Service é uma solução utilizada na integração de sistemas e na 
+    comunicação entre aplicações diferentes. Com esta tecnologia é possível 
+    que novas aplicações possam interagir com aquelas que já existem e que 
+    sistemas desenvolvidos em plataformas diferentes sejam compatíveis. 
+    Os Web Services são componentes que permitem às aplicações enviar e 
+    receber dados. Cada aplicação pode ter a sua própria "linguagem", 
+    que é traduzida para uma linguagem universal, 
+    um formato intermediário como XML, Json, CSV, etc.
+
+    - SOAP
+        - SOAP (Simple Object Access Protocol, em português Protocolo Simples 
+        de Acesso a Objetos) é um protocolo para troca de informações estruturadas
+        em uma plataforma descentralizada e distribuída. 
+        Ele se baseia na Linguagem de Marcação Extensível (XML) 
+        fonte: https://pt.wikipedia.org/wiki/SOAP
+    
+    - REST
+        - A Representational State Transfer (REST), 
+        em português Transferência de Estado Representacional,
+        é um estilo de arquitetura que define um conjunto de restrições e 
+        propriedades baseados em HTTP. Web Services que obedecem ao estilo 
+        arquitetural REST, ou web services RESTful, fornecem interoperabilidade 
+        entre sistemas de computadores na Internet. Os web services compatíveis 
+        com REST permitem que os sistemas solicitantes acessem e manipulem 
+        representações textuais de recursos da Web usando um conjunto uniforme 
+        e predefinido de operações sem estado. Outros tipos de web services, 
+        como web services SOAP, expõem seus próprios conjuntos arbitrários 
+        de operações.[1]
+        - REST
+            - conjunto de princípios de arquitetura
+        - RESTful
+            - capacidade de determinado sistema aplicar os princípios de REST. 
+        - Convenções
+            URL             Método      Descrição
+            /cliente        POST        NovoCliente
+            /cliente        GET         Obtém Todos
+            /cliente/36     GET         Obetém Cliente 36
+            /cliente/12     PUT         Atualiza Cliente 12
+            /cliente/41     DELETE      Excluir Cliente 41
+
+    - Escolhas Arquitetônica
+        - SOA
+            - Service-Oriented Architecture (SOA), pode ser traduzido como arquitetura 
+            orientada a serviços, e é um estilo de arquitetura de software cujo 
+            princípio fundamental prega que as funcionalidades implementadas pelas 
+            aplicações devem ser disponibilizadas na forma de serviços.[1][2]
+            Frequentemente estes serviços são conectados através de um "barramento de
+            serviços" (enterprise service bus, em inglês) 
+            que disponibiliza interfaces, ou contratos, acessíveis através de 
+            web services ou outra forma de comunicação entre aplicações.[2][3][4]
+            A arquitetura SOA é baseada nos princípios da computação distribuída e 
+            utiliza o paradigma request/reply para estabelecer a comunicação entre 
+            os sistemas clientes e os sistemas que implementam os serviços.[5]
+            fonte: https://pt.wikipedia.org/wiki/Service-oriented_architecture
+
+        - MicrosServiços
+            - Resumindo, o estilo de arquitetura de microsserviços é uma 
+            abordagem que desenvolve um aplicativo único como uma suite de 
+            pequenos serviços, cada um executando seu próprio processo e se 
+            comunicando através de mecanismos leves, muitas vezes em uma API 
+            com recursos HTTP. Esses serviços são construídos em torno de 
+            capacidades de negócios e funcionam através de mecanismos de deploy 
+            independentes totalmente automatizados. Há o mínimo possível de 
+            gerenciamento centralizado desses serviços, que podem ser escritos em 
+            diferentes linguagens de programação e utilizam diferentes tecnologias 
+            de armazenamento de dados.
+            fonte: https://www.thoughtworks.com/pt/insights/blog/microservices-nutshell

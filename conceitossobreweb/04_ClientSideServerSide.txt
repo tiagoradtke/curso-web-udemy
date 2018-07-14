@@ -1,0 +1,7 @@
+SPA - Single-page application (SPA)
+    A single-page application (SPA) is a web application or web site that 
+    interacts with the user by dynamically rewriting the current page rather 
+    than loading entire new pages from a server.
+
+    https://pt.wikipedia.org/wiki/Aplicativo_de_p%C3%A1gina_%C3%BAnica
+    https://youtu.be/Y_PedfN_Pcs

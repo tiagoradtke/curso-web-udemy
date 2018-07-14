@@ -1,0 +1,3 @@
+- antigamente existia uma separação bem definina em relação a CSS/HTML/JS
+    contudo hoje, framework estão juntando as "tecnologias"
+    é boa pratica separar as tecnologias, mas novas tecnologias estão flexibilizando isso

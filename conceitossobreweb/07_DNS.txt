@@ -1,0 +1,16 @@
+- DNS
+    Os servidores DNS (Domain Name System, ou sistema de nomes de domínios) 
+    são os responsáveis por localizar e traduzir para números IP os endereços
+    dos sites que digitamos nos navegadores.
+
+    - UDP 
+    - Porta 53
+    - Consulta interativa 
+        esse tipo de consulta distribuída não é automática e acontece quando o
+        seu DNS direto não é capaz de resolver um determinado nome e, assim, 
+        devolve endereços de servidores que podem resolver.
+    - Consulta recursiva 
+        a consulta distribuída é automática, 
+        ocorre quando o servidor DNS direto consegue resolver o 
+        nome e devolve essa resolução ao cliente que a solicitou.
+    http://www.fabiobmed.com.br/tipos-de-consulta-e-tipo-de-respostas-de-um-dns/

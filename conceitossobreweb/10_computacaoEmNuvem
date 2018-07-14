@@ -1,0 +1,34 @@
+- Computação em nuvem
+    O conceito de computação em nuvem (em inglês, cloud computing) refere-se à 
+    utilização da memória e da capacidade de armazenamento e cálculo de computadores 
+    e servidores compartilhados e interligados por meio da Internet, 
+    seguindo o princípio da computação em grade. [1]
+
+    O armazenamento de dados é feito em serviços que poderão 
+    ser acessados de qualquer lugar do mundo, a qualquer hora,
+    não havendo necessidade de instalação de programas ou de armazenar dados. 
+    O acesso a programas, serviços e arquivos é remoto, 
+    através da Internet - daí a alusão à nuvem.[2] 
+    O uso desse modelo (ambiente) é mais viável do que o uso 
+    de unidades físicas.[3]
+    fonte:https://pt.wikipedia.org/wiki/Computa%C3%A7%C3%A3o_em_nuvem
+
+    - IAAS
+        Em computação em nuvem, Infraestrutura como serviço, 
+        também conhecido como Infrastructure as a Service ou IaaS é 
+        uma infraestrutura de servidores acessada através da Internet [1] 
+        que pode ser consumida como um serviço[2].
+    
+    - PASS
+        PaaS — Platform as a Service — em computação, consiste no serviço 
+        propriamente dito, de hospedagem e implementação de hardware e software, 
+        que é usado para prover aplicações (software como serviço) por meio da 
+        Internet.
+
+    - SAAS
+        SaaS — Software as a Service (Software como Serviço)
+        Por fim, qualquer pessoa conhece o SaaS, mesmo que não saiba. 
+        Nesse terceiro modelo de nuvem, você pode ter acesso ao software sem 
+        comprar a sua licença, utilizando-o a partir da Cloud Computing, 
+        muitas vezes com recursos limitados.
+        

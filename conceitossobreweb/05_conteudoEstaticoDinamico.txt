@@ -1,0 +1,5 @@
+- Conteúdo Estático
+    - Servidor web lendo arquivos estáticos e não muda
+
+- Conteúdo Dinâmico
+    - Gerado a partir de um código / Muda

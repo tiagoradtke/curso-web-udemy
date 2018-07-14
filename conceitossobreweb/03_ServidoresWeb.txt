@@ -1,0 +1,59 @@
+> Servidor Web
+    https://pt.wikipedia.org/wiki/Servidor_web
+
+    Servidor web é um software responsável por aceitar pedidos em HTTP de
+    clientes, geralmente os navegadores, e servi-los com respostas em HTTP,
+    incluindo opcionalmente dados, que geralmente são páginas web, 
+    tais como documentos em HTML com objetos embutidos (imagens, etc.) 
+    ou um computador que executa um programa que provê a funcionalidade 
+    descrita anteriormente.[1] O mais popular, e mais utilizado no mundo,
+    é o servidor Apache (software livre). A Microsoft possui a sua própria
+    solução denominada IIS (Internet Information Services).
+
+    > Exemplos:
+        - Apache
+        - TomCat
+        - Microsoft ISS
+        - Jboss
+        - Nginx
+        - Node.js(não é propriamente dito um servidor web, mas tem funcionalidades)
+
+    > Virtual Hosting / Hospedagem virtual
+        Hospedagem virtual, do inglês Virtual hosting,
+        é um método que os servidores, tais como servidores web, 
+        utilizam para hospedar mais de um nome de domínio em um mesmo
+        computador, algumas vezes no mesmo endereço IP.
+        https://pt.wikipedia.org/wiki/Hospedagem_virtual
+    
+    > Estrutura de Pastas
+
+    > Web Stack
+        - SO + WebServer + DB + Linguagem 
+            - ex : xamp, lamp
+
+    > CDN
+        CDN, termo técnico, traduzido literalmente para o portugues como 
+        Rede de fornecimento, entrega e distribuição de conteúdo,[1] é um termo 
+        criado em fins da década de 1990 para descrever um sistema de computadores e
+        redes interligados através da Internet, que cooperam de modo transparente 
+        para fornecer conteúdo (particularmente grandes conteúdos de mídia) a 
+        usuários finais. a Maioria dos CDNs atuais utilizam Anycast para distribuição 
+        e roteamento. Simplificando, CDN, é uma maneira de enviar conteúdo massivo 
+        para usuários sem ter problemas com performance.
+
+        No entanto, uma CDN moderna vai muito além de apenas redistribuir conteúdo.
+        Novas tecnologias foram agregadas e estas redes atualmente oferecem 
+        também proteção contra ataques de hackers, spammers e ataques de DDoS,
+        através de mecanismos chamados WAF (Web Application Firewall). 
+        As CDN atuais são também capazes de armazenar e redistribuir conteúdos
+        dinâmicos (gerados por scripts), algo que as anteriores não conseguiam, 
+        pois só armazenavam conteúdos estáticos como códigos HTML e imagens.
+
+        Apesar de sua importância, essas redes ainda tem um uso discreto no Brasil, 
+        sendo majoritariamente utilizada por grandes websites [2]. 
+        Acredita-se, no entanto, que com o crescimento do número de CDNs atuando no Brasil 
+        (como CloudFlare, CloudFront, GoCache, Fastly e Sucuri) 
+        uma parcela maior de sites brasileiros, pequenos e médios, 
+        deverão adotar a tecnologia nos próximos anos.
+        fonte:https://pt.wikipedia.org/wiki/Rede_de_fornecimento_de_conte%C3%BAdo
+        
