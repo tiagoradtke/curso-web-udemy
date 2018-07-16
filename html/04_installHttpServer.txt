@@ -1,0 +1,20 @@
+//
+npm i -g http-server
+
+// iniciar server 
+http-server .
+
+//Iniciar server em outra porta
+http-server -p 9090 .
+
+
+//-c-1 tira o cache
+http-server -c-1 .
+
+https://www.npmjs.com/package/http-server
+
+
+++++++++++++++++
++Node server
+++++++++++++++++
+node server.js

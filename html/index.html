@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>        
+            body{
+                color: #fff;
+            }
+            header h1{
+                padding: 30px 30px;
+                background-color: rgb(66, 148, 185);
+                }
+            nav{
+                height: 5vh;
+                padding: 15px;
+                background-color: rgb(66, 148, 185);
+                color: #ffffff;
+               
+            }
+            nav a{
+                text-decoration: none;
+                color: #666;
+                background-color: rgb(164, 179, 197);
+                
+                padding: 15px;
+                font: outline;
+                display: inline-block;
+                transition: background-color 1s;
+            }
+            nav a:hover{
+                background-color:  rgb(66, 148, 185);
+                transition: background-color 1s;
+            }
+                
+            #conteudo{
+                padding: 30px 30px;
+                background-color: rgb(66, 148, 185);
+                color: #ffffff;
+                display: none;
+                margin-top: 21px;           
+            }
+            footer{
+                margin-top: 21px;
+                padding: 30px 30px;
+                background-color: rgb(66, 148, 185);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Exercicios HTML</h1>
+        </header>
+        <nav>
+            <!--<a href wm-nav="exercicios/teste.html">00 - Teste</a>
+            <a href wm-nav="exercicios/temp.html">temppp</a>-->
+            <a href wm-nav="exercicios/06_tagtextos01.html">Textos 01</a>
+            <a href wm-nav="exercicios/06_tagtextos02.html">Textos 02</a>            
+            <a href wm-nav="exercicios/07_listas.html">Listas</a>            
+            <a href wm-nav="exercicios/08_listasAninhadas.html">Listas Aninhadas</a>            
+            <a href wm-nav="exercicios/09_links.html">Links 01/02</a>            
+            <a href wm-nav="exercicios/10_tabela.html">Tabela</a>            
+            <a href wm-nav="exercicios/form/11_form.html">Form</a>
+            <a href wm-nav="exercicios/12_imagens.html">Imagens</a> 
+            <a href wm-nav="exercicios/13_video.html">Video</a>             
+            <a href wm-nav="exercicios/14_tagsnaovisuais.html">Tags Não Visuais</a>             
+        </nav>
+        <section id ="conteudo"></section>
+        <footer>
+            <p>Curso de Web Moderno</p>
+        </footer>
+
+        <script>
+
+            document.querySelectorAll('[wm-nav]').forEach(link =>{
+                const conteudo = document.getElementById('conteudo')
+                    link.onclick = function(e){
+                        e.preventDefault()                       
+                        fetch(link.getAttribute('wm-nav'))
+                            .then(resp => resp.text())
+                            .then(html => conteudo.innerHTML = html)
+                        document.getElementById("conteudo").style.display = "block";
+                    }
+                }
+
+            )
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Um Pouco de CSS</title>
+        <link rel="stylesheet" href="03_poucoCSS.css">
+        <style>
+            h1{
+                color: #666;
+                font-size: 66px;
+                transition: all 2s;                
+            }
+            h1:hover{
+                color: #669;
+                font-size:70px;
+                transition: all 2s;
+                padding: 15px 150px;
+            }
+            .fundoVermelho{
+                background-color: red
+            }
+            .negrito{
+                font-weight: 900;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>CSS</h1>
+        <span id="textoPrincipal">Texto 1</span><BR><BR><BR><BR>
+        <span class="fundoVermelho negrito">Texto 2</span><Br>
+        <span class="fundoVermelho" wm-atribu>Texto 3</span>
+    </body>
+    <script>
+        let seletores = document.querySelectorAll('.fundoVermelho')
+        seletores.forEach(sel => console.log("Seletores:",sel))
+
+        document.querySelector('#textoPrincipal')
+        document.querySelector('[wm-atribu]')
+    </script>
+</html>
