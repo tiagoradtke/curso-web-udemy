@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cores</title>
+        <style>
+            /* 
+                https://www.w3schools.com/colors/colors_hsl.asp                
+                https://coolors.co/
+                http://paletton.com/
+            */
+            *{                
+                overflow:auto;
+            }
+            body{
+                margin: 3px;
+            }
+            main{
+                min-height:100vh ;
+            }
+            div{
+                width: 24.5%;
+                height: 10vh;
+                display: inline-block;
+                padding: 15px;
+                box-sizing: border-box;
+                margin-top: 2px;
+                opacity: 1 ;
+                transition: opacity linear 2s;
+            }
+            div:hover{
+                opacity: 0.1 ;
+                transition: opacity linear 2s;
+            }
+            main div:nth-child(1){
+                background-color: hsl(30, 100%, 50%);
+            }
+            main div:nth-child(2){
+                background-color: hsl(50, 100%, 50%);
+            }
+            main div:nth-child(3){
+                background-color: hsl(291, 100%, 50%);
+            }
+            main div:nth-child(4){
+                background-color: hsl(358, 98%, 50%);
+            }
+            main div:nth-child(5){
+                background: linear-gradient(to right, #FCA5A5 , #D46A6A, #AA3939,#7D1313);
+            }
+            main div:nth-child(6){
+                background: linear-gradient(to bottom right, #FCA5A5 , #D46A6A, #AA3939,#7D1313);
+            }
+            main div:nth-child(7){
+                background: #edc91210;
+            }
+            main div:nth-child(8){
+                background: #edc91270;
+            }
+            main div:nth-child(9){
+                background: #1f1f1f;
+            }
+            main div:nth-child(10){
+                background: #1119;
+            }
+            main div:nth-child(11){
+                background-color: rgb(55, 110, 220);
+            } 
+            main div:nth-child(12){
+                background-color: rgba(55, 110, 220, 0.5);
+            } 
+            
+        </style>
+    </head>
+    <body>
+        <main> 
+            <div>hsl(30, 100%, 50%)</div>
+            <div>hsl(50, 100%, 50%)</div>
+            <div>hsl(291, 100%, 50%)</div>
+            <div>hsl(358, 98%, 50%)</div>
+            <div>to right, #FCA5A5 , #D46A6A, #AA3939,#7D1313</div>
+            <div>to bottom right, #FCA5A5 , #D46A6A, #AA3939,#7D1313</div>
+            <div>#edc91210</div>
+            <div>#edc91270</div>
+            <div>#1f1f1f</div>
+            <div>#1f1f1f</div>
+            <div>rgb(red, green, blue)</div>
+            <div>rgba(red, green, blue, 0.5)</div>
+        </main>    
+    </body>
+</html>

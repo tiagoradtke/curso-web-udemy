@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<!--
+    *               - todos elementos
+    elem            - exemplo h1, body, etc
+    .class          - Classe, pode ser aplicado mais de uma por tag, e para várias tags
+    #id             - Único
+    [Atributo]      -
+    :pseudo-class
+    ::pseudo-elementos
+
+    div + p - Adjacent Sibling
+    div ~ p - General Sibling 
+    div > p - Child
+    div   p - Descedant
+  -->
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+        /* ... */
+        #aninhado > div{
+            background-color:#ffffcd ;
+        }
+        #aninhado section{
+            background-color:#999 ;
+        }
+        p + ul{
+            background-color:aquamarine ;
+        }
+        p ~ ol{
+            background-color:aqua ;
+        }
+
+        span:nth-child(1){
+            background-color:plum ;
+        }
+        section > :nth-child(ood){
+            background-color: #666
+        }
+        section > :nth-child(even){
+            background-color:pink;
+            }
+        section > span:nth-of-type(2){
+            position: relative;
+            left:0px;
+            transition:left 1s linear;
+        }
+        section > span:nth-of-type(2):hover{
+            position: relative;
+            left:999px;
+            transition:left 5s linear;
+        }
+        /*
+            =
+            ~=
+            *=
+        */
+        [feira~='empresa']{
+            background-color:bisque ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='tag'>
+        <div class='tag'>
+            <p class='tag'>1</p>
+            <ul class='tag'>
+                <li>Arroz</li>
+                <li>Feijão</li>
+            </ul>
+            <ul class='tag' feira='escritorio empresa'>
+                <li>Café</li>
+                <li>Água</li>
+            </ul>
+            <ol id='aprovados' class='tag'>
+                <li>Maria</li>
+                <li>Pedro</li>
+                <li>Ana</li>
+            </ol>
+            <div id='aninhado' class='tag'>
+                <div class="tag">
+                    <section class='tag'>
+                        <span class='tag'>1</span>
+                        <p class='tag'>2</p>
+                        <span class='tag'>3</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button mostrarTags>Mostrar Tags</button>
+    <button esconderTags style="display:none">Esconder Tags</button>
+    <script src="js/tag.js"></script>
+</body>
+
+</html>

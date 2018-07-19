@@ -1,0 +1,17 @@
+- Prestar atenção nas nomeclaturas
+- Aprender a usar reuso de códigos
+
+- CamelCase
+https://pt.wikipedia.org/wiki/CamelCase
+    -CamelCase é a denominação em inglês para a prática de escrever as 
+    palavras compostas ou frases, onde cada palavra é iniciada com maiúsculas e unidas sem espaços.
+    É um padrão largamente utilizado em diversas linguagens de programação, como Java, C#, Ruby, PHP e Python, 
+    principalmente nas definições de classes e objetos.
+
+- CCS Browser
+    - no inspecionar elemento, vem por ordem de importância
+
+-Flex Grow
+    - https://www.w3schools.com/cssref/css3_pr_flex-grow.asp
+-Flex shrink
+    - https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp

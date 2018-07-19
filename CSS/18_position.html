@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        /* ... */
+        div{
+            font-size: 60px;
+            padding:  30px;
+            border: solid 5px #222;
+            color:#fff;
+        }
+        .static{
+            top:100px;
+            left: 100px;
+            background-color: steelblue;    
+        }
+        .fixed{
+            position: fixed;
+            bottom:30px;
+            right: -145px;
+            background-color: tomato;     
+            z-index: 10; 
+            transition-property: right;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 0.1s;      
+        }
+        .fixed:hover{
+            right: 30px;
+            transition-property: right;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 0.1s;
+        }
+        .relative1{
+            position: relative;
+            left: 50px;
+            top:5px;
+            background-color: seagreen;
+        }
+        /*
+            relative leva en consideração o elemento anterior
+        */
+        .absolute1{
+            position: absolute;
+            left: 350px;
+            top:120px;
+            background-color: violet;
+        }
+        /*absolute leva em consideração a viewport
+         caso não tenha elementoto pai com position relative */
+        .relative2{
+            /* position: relative; */
+            left: 50px;
+            top: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: slategrey;
+        }
+        .relative3{
+            position: relative;
+            left: 250px;
+            top: 2000px;
+            width: 400px;
+            height: 400px;
+            background-color: slategrey;
+        }
+        .absolute2{
+           position: absolute;
+           left:10px;
+           top: 10px;
+           width: 20px;
+           height: 20px;
+           background-color: orange;
+        }
+
+        .sticky{
+            /* position: -web-sticky; */
+            position: sticky;
+            background-color: #777;
+            top:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">Static (Padrão)</div>
+    <div class="fixed">Fixed</div>
+    <div class="relative1">Relative</div>
+    <div class="absolute1">Absolute</div>
+    
+    <div class="relative3">
+        <div class="relative2">
+            <div class="absolute2"></div>
+        </div>
+    </div>
+
+    <div class="sticky">Sticky</div>
+    <p style="padding-bottom: 2000px;">Opa</p>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        /* ... */
+        @keyframes mymove {
+            0%   {top: 0px;}
+            25%  {top: 200px;}
+            50%  {top: 100px;}
+            75%  {top: 200px;}
+            100% {top: 0px;}
+        }
+        body{
+            margin: 0px;
+        }
+       .seletor {
+           position: relative;
+           animation: mymove 15s infinite;
+           text-align: center;
+           font-size: 18px;
+           margin: 0px auto;
+           columns: #999999;
+           padding:50px ;
+           background-color: aquamarine;
+           /*Multiplos Valores*/
+           border: solid 3px #999;/* Shorthand Property*/
+           /*caso não tenha helvetica, usa monospace*/
+           font-family: Helvetica, monospace;
+           /*Funções*/
+           width:calc(50vh - 50px) ;
+            /*
+              RGB é a abreviação de um sistema de cores aditivas e primárias – 
+              Red (vermelho), Green (verde) e Blue (azul), 
+              baseada na teoria de visão colorida tricromática de Young-Helmnoltz e no triangulo de cores de Maxwell.  
+            */} 
+
+            /*Pseudo-classe*/
+            .seletor:hover{
+                background-color:blueviolet; 
+                color: aliceblue;               
+            }
+
+            /* Usando um pseudo-elemento*/
+            .seletor::first-letter{
+                font-size: 40px ;
+            }
+            .seletor:hover::first-letter{
+                font-size: 25px ;
+                font-weight: bold;
+            }
+            /* padrão de nomenclatura*/
+
+            /*dash-case ou camelCase*/
+    </style>
+</head>
+
+<body>
+    <div class="seletor">Conteúdo</div>
+</body>
+
+</html>
