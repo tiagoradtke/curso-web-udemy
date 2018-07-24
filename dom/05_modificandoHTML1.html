@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Modificando HTML #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <style>
+        .p2{
+            font-size: 1em;
+            transition: all 3s;
+        }
+        .p1{
+            font-size: 1.5em;
+            transition: all 3s;
+        }
+        
+    </style>
+</head>
+
+<body class='conteudo exercicio'>
+    <script>
+        // refêrencia de onde colocar os elementos criados       
+        const body = document.querySelector('body')
+
+        const div1 = document.createElement('div')
+        div1.classList.add('destaque')
+        div1.innerHTML = 'Primeiro'
+
+        const div2 = document.createElement('div')
+        div2.setAttribute('em-atributo', 'valor')
+        div2.innerHTML = 'Segundo'
+
+        const p = document.createElement('p')
+        p.innerHTML = 'Terceiro'
+        p.classList.add('p1')
+        p.classList.add('p2')
+        const div3 = document.createElement('div')
+        div3.appendChild(p)
+
+        body.appendChild(div1)
+        body.appendChild(div2)
+        body.appendChild(div3)
+
+        const texto = document.createTextNode('Antes...')  
+
+        const div4 = div3.cloneNode(true)//tem como clonar os filhos ou não
+        body.appendChild(div4)
+
+        var flag= true
+        // setInterval(function(){
+        //     console.log("1 setinterval",flag)
+        //     if(flag){
+        //         div4.insertBefore(texto, div4.childNodes[1])
+        //         console.log("1 setinterval",flag)
+        //         flag = false
+        //     }else{
+        //         div4.insertBefore(texto, div4.childNodes[0])
+        //         console.log("1 setinterval",flag)
+        //         flag = true
+        //     }
+             
+        //      }, 2000)
+
+
+        
+      //  body.removeChild(div3)
+        setInterval(function(){ p.classList.toggle('p1') }, 3000)
+    </script>
+</body>
+
+</html>

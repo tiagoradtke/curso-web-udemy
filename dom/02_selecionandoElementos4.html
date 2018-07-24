@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #04 </title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #myList{
+            width: 80%;
+            display: grid;
+            grid-template-columns:50% 50%;
+            text-align: center;
+            list-style-type:none;
+
+            }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            }
+    </style>
+</head>
+
+<body class="conteudo exercicio">
+    <div>
+        <p>Início</p>
+    </div>
+    <div>
+        <ul id="myList">
+            <li>Pedro</li>
+            <li>Ana</li>
+            <li>Bia</li>
+        </ul>
+    </div>
+    <div>
+        <p>Fim</p>
+    </div>
+    <script>
+        // ...
+        function log(){
+            console.log(this)
+        }
+        HTMLCollection.prototype.log = log
+        HTMLElement.prototype.log = log
+        NodeList.prototype.log = log
+        Node.prototype.log = log
+        
+        const lista = document.querySelector('div ul')
+        // lista.parentNode.log()
+        // lista.childNodes.log()/*vem com o espaços, quebra de linhas, do proprio documento html*/
+        lista.childNodes.forEach(e => e.nodeName != "#text" ? e.style.color = "tomato" : 1 == 1   )
+    
+        const primeiro = lista.firstChild
+        primeiro.log()
+        primeiro.nextSibling.log()
+
+        const ultimo = lista.lastChild
+        ultimo.log()
+        ultimo.previousSibling.log()
+        ultimo.previousSibling.style.color = "#ffcd"
+
+        lista.children.log()
+        console.log(lista.children.length)
+        lista.firstElementChild.log()
+        lista.lastElementChild.log()
+        lista.parentNode.previousElementSibling.style.background = "#ff8978" 
+        lista.parentNode.previousElementSibling.log()
+        lista.parentNode.nextElementSibling.style.background = "#ffd978" 
+        lista.parentNode.nextElementSibling.log()
+        /*
+            ...Relembrando
+            childNodes tras os textos entre as tags     -> Nodelist
+            children   trás os elementos                -> HTMLCollection
+            querySelectorAll                            -> Nodelist
+        */
+        ul = document.querySelectorAll('div ul')
+        for(let i = 0 ;i < 10;i++){
+            var node = document.createElement("LI");
+            var textnode = document.createTextNode(`caso ${i}`)
+            node.appendChild(textnode)
+            ul[0].appendChild(node)
+        }       
+
+        document.querySelectorAll('div ul li').log()
+        li = document.querySelectorAll('div ul li')
+        let cont = 0
+        li.forEach(e => {
+            if(cont%2 == 0){
+                e.style.color = 'Moccasin'
+            }else{
+                e.style.color = 'CornflowerBlue'
+            }
+            cont++
+        })
+
+
+    </script>
+</body>
+
+</html>
