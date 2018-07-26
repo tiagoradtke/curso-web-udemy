@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>XMLHttpRequest #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+    <style>
+        input[type=file] {
+            display: flex;
+            margin: 10px;
+            padding: 40px;
+            font-size: 40px;
+            background: crimson;
+            border-radius: 20px;
+        }
+        #progressoBarra{
+            border: 3px solid #999;
+            width: 70%;
+            height: 70px;
+            margin: 0px;
+            padding: 0px;
+        }
+        #carregamento{
+            border: 0px;
+            background: green;
+            margin: 0px;
+            padding: 0px;
+            width: 0%;
+            height: 100%;
+        }
+        #carregamentoSpan{
+            font-size:15px;
+            padding: 0px;
+            width: 17px;
+            height: 50px;
+            display: block;
+            margin:0px auto;
+            text-align: center;
+        }
+        .exercicio div{
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body class="conteudo exercicio">
+    <input type="file" name="arquivo" />
+    <div class="progresso"></div>
+    <div id="progressoBarra">
+        <div id="carregamento">
+            <span id="carregamentoSpan">0%</span>
+        </div>
+    </div>
+
+    <script>
+        // ...
+        function ajaxUpload(config){
+            const xhr = new XMLHttpRequest()
+
+            if(xhr.upload ){
+                xhr.upload.onprogress = e =>{
+                    const atual = e.loaded
+                    const total = e.total
+                    const percentual = Math.floor(atual / total * 100)
+                    config.progresso({atual, total, percentual})
+                }
+            }
+            xhr.open("post", config.url, true)
+            xhr.send(config.formData)
+        }
+
+        document.querySelector('input[type=file]').onchange = e =>{
+            const formData = new FormData()
+            formData.append(e.target.name, e.target.files[0])
+            ajaxUpload({
+                url:"upload",
+                formData:formData,
+                progresso(dados){
+                    const progresso = document.querySelector('.progresso')
+                    progresso.innerHTML = JSON.stringify(dados)
+                    percente = dados.percentual
+                    
+                    if( percente != 100){
+                        document.getElementById('carregamento').style.width = `${percente}%`
+                        document.getElementById('carregamentoSpan').innerHTML = `${percente}%`
+                    }else{
+                        document.getElementById('carregamento').style.width = `${percente}%`
+                        document.getElementById('carregamentoSpan').style.width = `${percente}%`
+                        document.getElementById('carregamentoSpan').innerHTML = "Carregamento Finalizado"
+                    }
+
+                    // percent = JSON.stringify(dados) 
+                }
+            })
+        }
+        
+    </script>
+</body>
